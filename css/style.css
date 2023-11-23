@@ -11,37 +11,56 @@ body {
 }
 
 /* Container Class */
+.lg-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .sm-container {
   max-width: 1000px;
   margin: 0 auto;
 }
-.lg-container {
-  max-width: 1400px;
-  margin: 0 auto;
+
+/* Flex-SBTW */
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Immagine Fluida */
+
+.fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Fake-Button */
-.sm-btn {
+.sm-btn-primary {
   color: white;
   background-color: #0061ff;
   padding: 5px 10px;
 }
-.m-btn {
+.m-btn-primary {
   color: white;
   background-color: #0061ff;
   padding: 7px 15px;
 }
-.lg-btn {
+.lg-btn-primary {
   color: white;
   background-color: #0061ff;
   padding: 5px 10px;
+}
+
+.secondary-btn {
+  color: black;
+  border: 1px solid black;
+  padding: 7px 15px;
 }
 
 /* Header Nav */
 
 nav {
-  display: flex;
-  justify-content: space-between;
   min-height: 60px;
   align-items: center;
 }
@@ -91,19 +110,91 @@ h1 {
 
 .mini {
   margin-top: 50px;
-  display: flex;
 }
 
-p {
+.jumbotron p {
   font-size: 1rem;
   margin-bottom: 30px;
 }
 a {
   font-size: 1rem;
 }
-.m-btn + p {
+.m-btn-primary + p {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-/* ----------------------------------------------------------- */
+/* -------------Main------------- */
+.pricing {
+  height: 900px;
+  border: 2px solid black;
+  margin-top: 80px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col {
+  flex-basis: calc(100% / 3 - 20px / 3);
+  border: 1px solid goldenrod;
+  height: 400px;
+}
+.col-large {
+  flex-basis: 100%;
+  border: 1px solid goldenrod;
+  height: 100px;
+}
+
+/* Partner-Section */
+
+.partner {
+  border: 1px solid black;
+  margin-top: 80px;
+}
+
+.search-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  flex-basis: 60%;
+}
+
+.search-info {
+  flex-basis: 40%;
+  padding: 30px;
+}
+
+.partner a {
+  text-decoration: none;
+}
+
+.search-info * {
+  margin-bottom: 50px;
+}
+
+/* Business Plan Section */
+.business-plan {
+  min-height: 100px;
+  border: 2px solid black;
+  margin-top: 80px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col-business {
+  flex-basis: calc(100% / 3 - 20px / 3);
+  border: 1px solid goldenrod;
+  min-height: 400px;
+}
+
+.col-business-lg {
+  flex-basis: 100%;
+  border: 1px solid goldenrod;
+}
+
+.col-business * {
+  margin-bottom: 20px;
+}
