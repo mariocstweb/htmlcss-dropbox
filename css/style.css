@@ -84,6 +84,9 @@ h1 {
   font-size: 4rem;
   font-weight: bolder;
 }
+h2 {
+  font-size: 2.5rem;
+}
 
 .jumbotron {
   background-color: #b4d0e7;
@@ -196,5 +199,18 @@ a {
 }
 
 .col-business * {
+  margin-bottom: 20px;
+}
+
+/* Number Section */
+
+.number {
+  border: 2px solid black;
+  margin-top: 80px;
+}
+.number-info {
+  width: 700px;
+}
+.number-info * {
   margin-bottom: 20px;
 }
