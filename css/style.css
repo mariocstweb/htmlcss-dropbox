@@ -33,9 +33,21 @@ body {
   justify-content: space-between;
 }
 
+.flex-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-icon {
+  display: flex;
+  justify-content: start;
+  gap: 6px;
+}
+
 /* Immagine Fluida */
 
-img {
+.fluid {
   max-width: 100%;
   height: auto;
   display: block;
@@ -66,6 +78,8 @@ img {
 .mt-40 {
   margin-top: 40px;
 }
+
+/* Icone */
 
 /* Check Color */
 .fa-check {
@@ -161,6 +175,7 @@ header {
 nav {
   min-height: 60px;
   align-items: center;
+  box-shadow: 1px 1px 12px lightgrey;
 }
 
 nav ul li {
@@ -173,8 +188,13 @@ Header a {
   color: black;
 }
 
+.navbar-left ul {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-left ul li img {
-  /* vertical-align: middle; */
+  /* align-items: center; */
 }
 
 /* Header Jumbo */
@@ -228,14 +248,23 @@ a {
 
 #circle {
 }
+
 .mini-divisore {
   border: 1px solid lightgrey;
   width: 50px;
   margin-left: 20px;
 }
+
+.mini-divisore-lg {
+  border: 1px solid lightgrey;
+  width: 120px;
+  margin-left: 20px;
+}
+
 .pricing a {
   text-decoration: none;
 }
+
 .pricing {
   min-height: 900px;
   border: 2px solid black;
@@ -252,8 +281,8 @@ a {
   min-height: 400px;
 }
 
-.col * {
-  margin-bottom: 30px;
+.col p {
+  margin: 15px 0;
 }
 
 .col-large {
@@ -263,11 +292,9 @@ a {
 }
 .card-logo {
   border-bottom: 1px solid lightgrey;
-  /* padding: 10px; */
+  padding: 10px;
   min-height: 50px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  text-align: center;
 }
 .card-content-top,
 .card-content-bottom {
@@ -369,6 +396,11 @@ a {
   aspect-ratio: 1/1;
 }
 
+.col-partner-lg {
+  padding: 50px;
+  height: 100%;
+}
+
 .col-partner-xlg {
   width: 100%;
   height: 396px;
@@ -378,8 +410,9 @@ a {
   border: 1px solid;
   width: 100%;
   display: flex;
-  /* justify-content: center; */
-  align-self: center;
+  align-items: start;
+  justify-content: space-between;
+  /* align-self: center; */
 }
 
 /* FAQ Section */
@@ -434,6 +467,10 @@ footer a {
   text-decoration: none;
 }
 
+footer ul li {
+  margin-bottom: 15px;
+}
+
 .language {
   color: grey;
   display: flex;
@@ -445,4 +482,12 @@ footer a {
 .mini-divisor {
   border-top: 1px solid grey;
   width: 100px;
+}
+
+/* SVG CONVERTER */
+.bianco {
+  max-height: 200px;
+  max-width: 200px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
