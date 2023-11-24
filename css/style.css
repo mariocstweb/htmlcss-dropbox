@@ -41,6 +41,32 @@ img {
   display: block;
 }
 
+/* Margin-Bottom */
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* Margin-Top */
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
 /* Check Color */
 .fa-check {
   color: #0061ff;
@@ -67,6 +93,22 @@ img {
   color: black;
   border: 1px solid black;
   padding: 7px 15px;
+}
+
+/* Bolder */
+
+.bolder {
+  font-weight: bolder;
+}
+
+/* TXT Color */
+
+.color-dr {
+  color: #61082b;
+}
+
+.color-lg {
+  color: lightgrey;
 }
 
 /* Background Color */
@@ -132,7 +174,7 @@ Header a {
 }
 
 .navbar-left ul li img {
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 /* Header Jumbo */
@@ -179,6 +221,13 @@ a {
 }
 
 /* -------------Main------------- */
+
+/* Pricing */
+#circle {
+}
+
+#circle {
+}
 .mini-divisore {
   border: 1px solid lightgrey;
   width: 50px;
@@ -204,7 +253,7 @@ a {
 }
 
 .col * {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .col-large {
@@ -213,14 +262,23 @@ a {
   min-height: 100px;
 }
 .card-logo {
-  text-align: center;
   border-bottom: 1px solid lightgrey;
-  padding: 10px;
+  /* padding: 10px; */
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 .card-content-top,
 .card-content-bottom {
   padding: 30px 20px;
 }
+
+.card-content-large {
+  height: auto;
+  padding: 20px;
+}
+
 .col-left {
   flex-basis: 70%;
 }
@@ -232,7 +290,6 @@ a {
 /* Partner-Section */
 
 .partner {
-  border: 1px solid black;
   margin-top: 80px;
 }
 
@@ -313,9 +370,16 @@ a {
 }
 
 .col-partner-xlg {
-  border: 10px solid rgb(218, 32, 32);
   width: 100%;
   height: 396px;
+  align-items: center;
+}
+.partner-lg-content {
+  border: 1px solid;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-self: center;
 }
 
 /* FAQ Section */
