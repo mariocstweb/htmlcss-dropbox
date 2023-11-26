@@ -79,6 +79,12 @@ body {
   margin-top: 40px;
 }
 
+/* Margin-Right */
+
+.mr-40 {
+  margin-right: 40px;
+}
+
 /* Icone */
 
 /* Check Color */
@@ -91,16 +97,19 @@ body {
   color: white;
   background-color: #0061ff;
   padding: 5px 10px;
+  text-decoration: none;
 }
 .m-btn-primary {
   color: white;
   background-color: #0061ff;
   padding: 7px 15px;
+  text-decoration: none;
 }
 .lg-btn-primary {
   color: white;
   background-color: #0061ff;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 .secondary-btn {
@@ -123,6 +132,9 @@ body {
 
 .color-lg {
   color: lightgrey;
+}
+.color-blue {
+  color: #0061ff;
 }
 
 /* Background Color */
@@ -183,6 +195,7 @@ nav ul li {
   display: inline;
   margin: 0 15px;
 }
+
 Header a {
   text-decoration: none;
   color: black;
@@ -193,8 +206,9 @@ Header a {
   align-items: center;
 }
 
-.navbar-left ul li img {
-  /* align-items: center; */
+.navbar-left ul li {
+  border-bottom: 1px solid green;
+  height: 100%;
 }
 
 /* Header Jumbo */
@@ -232,8 +246,9 @@ h2 {
   margin-bottom: 30px;
 }
 
-a {
+.jumbotron a {
   font-size: 1rem;
+  text-decoration: none;
 }
 .m-btn-primary + p {
   margin-top: 30px;
@@ -244,9 +259,19 @@ a {
 
 /* Pricing */
 #circle {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 2px solid lightgrey;
+  border-radius: 50%;
 }
 
-#circle {
+#circleblue {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 4px solid #0061ff;
+  border-radius: 50%;
 }
 
 .mini-divisore {
@@ -261,13 +286,9 @@ a {
   margin-left: 20px;
 }
 
-.pricing a {
-  text-decoration: none;
-}
-
 .pricing {
   min-height: 900px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 130px;
   display: flex;
   padding: 10px;
@@ -343,7 +364,7 @@ a {
 /* Business Plan Section */
 .business-plan {
   min-height: 100px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 80px;
   display: flex;
   padding: 20px;
@@ -353,13 +374,13 @@ a {
 
 .col-business {
   flex-basis: calc(100% / 3 - 20px / 3);
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
   min-height: 400px;
 }
 
 .col-business-lg {
   flex-basis: 100%;
-  border: 1px solid goldenrod;
+  /* border: 1px solid goldenrod; */
 }
 
 .col-business * {
@@ -417,46 +438,42 @@ a {
 
 /* FAQ Section */
 .faq {
-  height: 1000px;
+  height: 600px;
   align-items: center;
 }
 
 .faq-content {
-  border: 2px solid dodgerblue;
+  /* border: 2px solid dodgerblue; */
   height: 350px;
   width: 100%;
 }
 
 .divisor {
   border: 1px solid #a6a6a6;
-}
-.faq-content * {
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* Footer */
 footer {
   background-color: black;
-  height: 700px;
+  height: 500px;
 }
 
 .main-footer {
   display: flex;
   align-items: center;
+  height: 400px;
 }
 
 .footer-box {
-  /* border: 1px solid white; */
-  height: 500px;
+  height: 200px;
   width: 100%;
   display: flex;
-  margin-top: 100px;
 }
 
 .col-f {
-  /* border: 1px solid white; */
   flex-basis: calc(100% / 5);
-  height: 100%;
 }
 
 h3 {
@@ -476,12 +493,18 @@ footer ul li {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .mini-divisor {
   border-top: 1px solid grey;
   width: 100px;
+}
+
+.italiano {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 /* SVG CONVERTER */
