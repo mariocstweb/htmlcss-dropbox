@@ -43,6 +43,7 @@ body {
   display: flex;
   justify-content: start;
   gap: 6px;
+  align-items: baseline;
 }
 
 /* Immagine Fluida */
@@ -192,7 +193,7 @@ header {
 
 nav {
   min-height: 60px;
-  align-items: center;
+  /* align-items: center; */
   box-shadow: 1px 1px 12px lightgrey;
 }
 
@@ -207,12 +208,7 @@ Header a {
   color: black;
 }
 
-.navbar-left ul {
-  display: flex;
-  align-items: center;
-}
-
-/* Hover */
+/* Nav Hover */
 
 .navbar-left ul,
 .navbar-right ul {
@@ -231,9 +227,9 @@ Header a {
 
 .navbar-left ul li:hover,
 .navbar-right ul li:hover {
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 2px solid rgb(151, 151, 151);
   padding-top: 2px;
-  min-height: 58px;
+  min-height: 60px;
 }
 
 /* Header Jumbo */
@@ -346,6 +342,14 @@ h2 {
 .card-content-bottom {
   padding: 30px 20px;
 }
+.card-content-top,
+.card-content-bottom ul li {
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+}
 
 .card-content-large {
   height: auto;
@@ -428,14 +432,22 @@ h2 {
 }
 
 .row {
-  width: 400px;
-  width: calc((100% / 6) * 2);
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
   flex-wrap: wrap;
 }
 
 .col-partner {
-  width: calc(100% / 2);
-  aspect-ratio: 1/1;
+  width: 50%;
+  height: 50%;
+  border: 10px solid transparent;
+}
+
+/* Partner Hover */
+.col-partner:hover {
+  border-color: rgba(255, 255, 255, 0.235);
+  padding-top: 2px;
+  min-height: 58px;
 }
 
 .col-partner-lg {
